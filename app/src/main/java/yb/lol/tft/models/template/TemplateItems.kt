@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import yb.lol.tft.R
 import yb.lol.tft.models.Item
+import yb.lol.tft.models.Rank
 import yb.lol.tft.models.Stat
 
 class TemplateItems(ctx: Context) {
@@ -14,7 +15,7 @@ class TemplateItems(ctx: Context) {
     val guardianAngel = Item(
         image = drawable,
         name = "Guardian Angel",
-        ranking = 'S',
+        rank = Rank.S,
         stats = arrayListOf(
             Stat(
                 logo = drawable,
@@ -37,7 +38,7 @@ class TemplateItems(ctx: Context) {
                     )
                 ),
                 desc = null,
-                ranking = 'A',
+                rank = Rank.A,
                 recipe = null
             ),
             Item(
@@ -50,7 +51,7 @@ class TemplateItems(ctx: Context) {
                     )
                 ),
                 desc = null,
-                ranking = 'B',
+                rank = Rank.B,
                 recipe = null
             )
         )

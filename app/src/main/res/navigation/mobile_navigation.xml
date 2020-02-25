@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_champions">
+    app:startDestination="@+id/nav_compositions">
 
     <fragment
-        android:id="@+id/nav_champions"
-        android:name="yb.lol.tft.ui.champions.ChampionsFragment"
-        android:label="@string/menu_champions"
-        tools:layout="@layout/fragment_champions" />
+        android:id="@+id/nav_compositions"
+        android:name="yb.lol.tft.ui.compositions.CompositionsFragment"
+        android:label="@string/menu_compositions"
+        tools:layout="@layout/fragment_compositions" />
 
 </navigation>

@@ -6,16 +6,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
     <string name="menu_champions">Champions</string>
     <string name="menu_items">Items</string>
     <string name="menu_tier_list">Tier List</string>
     <string name="menu_utilities">Utilities</string>
     <string name="menu_summoners">Summoners</string>
     <string name="menu_synergy_builder">Synergy Builder</string>
+    <string name="menu_compositions">Compositions</string>
 </resources>

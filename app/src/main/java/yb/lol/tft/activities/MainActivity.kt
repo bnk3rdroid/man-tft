@@ -1,4 +1,4 @@
-package yb.lol.tft.activities.main
+package yb.lol.tft.activities
 
 import android.os.Bundle
 import android.view.Menu
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_champions
+                R.id.nav_compositions
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

@@ -5,41 +5,10 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_champions"
+            android:id="@+id/nav_compositions"
             android:icon="@drawable/ic_person"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_items"
-            android:icon="@drawable/ic_local_dining"
-            android:title="@string/menu_items" />
-        <!--
-        <item
-            android:id="@+id/nav_tier_list"
-            android:icon="@drawable/ic_person"
-            android:title="@string/menu_tier_list" />
-        <item
-            android:id="@+id/nav_utilities"
-            android:icon="@drawable/ic_person"
-            android:title="@string/menu_utilities" />
-            -->
+            android:title="@string/menu_compositions" />
+
     </group>
-    <!--
-        <group android:checkableBehavior="single">
 
-            <item
-                android:id="@+id/nav_summoners"
-                android:icon="@drawable/ic_person"
-                android:title="@string/menu_summoners" />
-
-        </group>
-
-        <group android:checkableBehavior="single">
-
-            <item
-                android:id="@+id/nav_synergy_builder"
-                android:icon="@drawable/ic_person"
-                android:title="@string/menu_synergy_builder"/>
-
-        </group>
-        -->
 </menu>

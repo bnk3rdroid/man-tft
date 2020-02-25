@@ -1,7 +1,6 @@
 package yb.lol.tft.models.template
 
 import android.content.Context
-import android.graphics.BitmapFactory
 import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import yb.lol.tft.R

@@ -8,10 +8,10 @@ import yb.lol.tft.models.*
 
 class TemplateChampions(ctx: Context, optimalItems: ArrayList<Item>, types: ArrayList<Type>) {
 
-    val drawable: Drawable = ContextCompat.getDrawable(ctx, R.drawable.ic_menu_camera)!!
+    val drawable: Drawable = ContextCompat.getDrawable(ctx, R.mipmap.ic_veigar)!!
 
     val veigar = Champion(
-
+        id = 0,
         image = drawable,
         name = "Veigar",
         level = 3,
@@ -31,15 +31,17 @@ class TemplateChampions(ctx: Context, optimalItems: ArrayList<Item>, types: Arra
         synergies = mapOf(
             if (types.size > 1) types[0] to null else {
                 Type(
+                    id = 0,
                     logo = drawable,
                     name = "Template",
                     desc = "Template description.",
                     effects = arrayListOf(
-                        Effect(3, "Template effect level 3."),
-                        Effect(6, "Template effect level 6.")
+                        Effect(0,3, "Template effect level 3."),
+                        Effect(1,6, "Template effect level 6.")
                     )
                 ) to null
             }
-        )
+        ),
+        carryItems = null
     )
 }

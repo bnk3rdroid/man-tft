@@ -9,32 +9,36 @@ import yb.lol.tft.models.Type
 
 class TemplateTypes(ctx: Context) {
 
-    val drawable: Drawable = ContextCompat.getDrawable(ctx, R.drawable.ic_menu_camera)!!
+    private val shadowDrawable: Drawable = ContextCompat.getDrawable(ctx, R.mipmap.ic_shadow)!!
+    private val magesDrawable: Drawable = ContextCompat.getDrawable(ctx, R.mipmap.ic_mage)!!
 
     val shadowType = Type(
-        logo = drawable,
+        id = 0,
+        logo = shadowDrawable,
         name = "Shadow",
         desc = "Shadow champions deal increased damage for 0.6 seconds at start, refreshed on takedown.",
         effects = arrayListOf(
             Effect(
-                level = 3, desc = "+65% increased damage, refresh only on self takedown."
+                id = 0, level = 3, desc = "+65% increased damage, refresh only on self takedown."
             ),
             Effect(
-                level = 6, desc = "+165% increased damage, refresh on any shadow takedown."
+                id = 1, level = 6, desc = "+165% increased damage, refresh on any shadow takedown."
             )
         )
     )
 
-    val mageType = Type(
-        logo = drawable,
-        name = "Mage",
+    val magesType = Type(
+        id = 1,
+        logo = magesDrawable,
+        name = "Mages",
         desc = "Mages have a chance on cast to instead double cast.",
         effects = arrayListOf(
             Effect(
-                level = 3, desc = "+50% chance to double cast."
+                id = 3, level = 3, desc = "+50% chance to double cast."
             ),
             Effect(
                 level = 6,
+                id = 4,
                 desc = "+100% chance to double cast, and all mages gain 20 bonus ability power."
             )
         )

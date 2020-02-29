@@ -2,10 +2,16 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_big">32dp</dimen>
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="item_champion_size">32dp</dimen>
     <dimen name="item_decoration_vertical_margin">8dp</dimen>
+    <dimen name="item_decoration_vertical_margin_small">4dp</dimen>
+    <dimen name="item_decoration_horizontal_margin">8dp</dimen>
+    <dimen name="item_decoration_horizontal_margin_small">4dp</dimen>
+    <dimen name="item_decoration_horizontal_margin_xsmall">2dp</dimen>
     <dimen name="rankingIconSize">16dp</dimen>
+    <dimen name="item_type_small_size">24dp</dimen>
 </resources>

@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ItemOffsetDecoration(
     private val ctx: Context,
-    private val itemOffset: Int
+    private val itemOffset: Int,
+    private val orientation: Orientation
 ) :
     RecyclerView.ItemDecoration() {
 
@@ -18,6 +19,24 @@ class ItemOffsetDecoration(
         state: RecyclerView.State
     ) {
         super.getItemOffsets(outRect, view, parent, state)
-        outRect.set(0, 0, 0, ctx.resources.getDimensionPixelSize(itemOffset))
+        when (orientation) {
+            Orientation.HORIZONTAL -> outRect.set(
+                0,
+                0,
+                ctx.resources.getDimensionPixelSize(itemOffset),
+                0
+            )
+            Orientation.VERTICAL -> outRect.set(
+                0,
+                0,
+                0,
+                ctx.resources.getDimensionPixelSize(itemOffset)
+            )
+        }
+
+    }
+
+    enum class Orientation {
+        HORIZONTAL, VERTICAL
     }
 }

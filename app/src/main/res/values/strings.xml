@@ -13,4 +13,5 @@
     <string name="menu_summoners">Summoners</string>
     <string name="menu_synergy_builder">Synergy Builder</string>
     <string name="menu_compositions">Compositions</string>
+    <string name="menu_test_room">Test Room</string>
 </resources>

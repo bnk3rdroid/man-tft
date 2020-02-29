@@ -18,6 +18,7 @@ import yb.lol.tft.ui.recycler_view.ItemOffsetDecoration
 class CompositionsFragment : Fragment() {
 
     private lateinit var compositionsViewModel: CompositionsViewModel
+    private var once: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,19 +33,32 @@ class CompositionsFragment : Fragment() {
         view.findViewById<RecyclerView>(R.id.champions_rv).apply {
             val fragment = this@CompositionsFragment
             adapter = CompositionsAdapter()
-            addItemDecoration(ItemOffsetDecoration(context, R.dimen.item_decoration_vertical_margin))
-
-            compositionsViewModel = ViewModelProvider(fragment).get(CompositionsViewModel::class.java)
+            compositionsViewModel =
+                ViewModelProvider(fragment).get(CompositionsViewModel::class.java)
             val observer = Observer<ArrayList<Composition>> {
                 (adapter as CompositionsAdapter).update(it)
             }
             compositionsViewModel.compositions.observe(viewLifecycleOwner, observer)
         }
 
+        //Decorations
+        if (!once) {
+            view.findViewById<RecyclerView>(R.id.champions_rv).apply {
+                addItemDecoration(
+                    ItemOffsetDecoration(
+                        context,
+                        R.dimen.item_decoration_vertical_margin,
+                        ItemOffsetDecoration.Orientation.VERTICAL
+                    )
+                )
+            }
+        }
+
         view.findViewById<Button>(R.id.champion_update_btn).setOnClickListener {
             compositionsViewModel.compositions.value = arrayListOf(
                 getTemplateComposition(context),
-                getTemplateComposition(context))
+                getTemplateComposition(context)
+            )
         }
 
         return view

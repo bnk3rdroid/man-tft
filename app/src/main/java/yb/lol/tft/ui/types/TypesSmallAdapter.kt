@@ -1,23 +1,21 @@
 package yb.lol.tft.ui.types
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_type_small.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.Type
+import yb.lol.tft.models.entities.Type
 
 class TypesSmallAdapter : RecyclerView.Adapter<TypesSmallAdapter.TypesSmallViewHolder>() {
 
-    private lateinit var ctx: Context
-    private var data: ArrayList<Type> = arrayListOf()
+    private var data: List<Type> = arrayListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TypesSmallViewHolder {
-        ctx = parent.context
         return TypesSmallViewHolder(
-            LayoutInflater.from(ctx).inflate(
+            LayoutInflater.from(parent.context).inflate(
                 R.layout.item_type_small,
                 parent,
                 false
@@ -31,13 +29,14 @@ class TypesSmallAdapter : RecyclerView.Adapter<TypesSmallAdapter.TypesSmallViewH
     override fun onBindViewHolder(holder: TypesSmallViewHolder, position: Int) {
         val item = data[position]
 
-        holder.itemView.type_small_logo.setImageDrawable(item.logo)
+        val defaultDrawable = ContextCompat.getDrawable(holder.itemView.context, R.drawable.ic_book_black_24dp)
+        holder.itemView.type_small_logo.setImageDrawable(item.logo ?: defaultDrawable)
     }
 
-    fun update(newData: ArrayList<Type>) {
+    fun update(newData: List<Type>) {
         data = newData
         notifyDataSetChanged()
     }
 
-    class TypesSmallViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {}
+    class TypesSmallViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 }

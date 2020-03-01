@@ -39,7 +39,7 @@ class TestRoomFragment : Fragment() {
         recyclerView.addItemDecoration(
             ItemOffsetDecoration(
                 view.context,
-                R.dimen.item_decoration_vertical_margin,
+                R.dimen.margin_small,
                 ItemOffsetDecoration.Orientation.VERTICAL
             )
         )

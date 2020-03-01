@@ -2,13 +2,13 @@ package yb.lol.tft.ui.compositions
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import yb.lol.tft.models.Composition
+import yb.lol.tft.models.entities.Composition
 
 class CompositionsViewModel : ViewModel() {
 
-    private val _comps = MutableLiveData<ArrayList<Composition>>().apply {
-        value = arrayListOf()
+    private val _comps = MutableLiveData<List<Composition>>().apply {
+        value = listOf()
     }
 
-    val compositions: MutableLiveData<ArrayList<Composition>> = _comps
+    val compositions: MutableLiveData<List<Composition>> = _comps
 }

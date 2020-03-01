@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Kindred (id=42)" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="Level : 3 gold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_types"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_mana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cost"
+        tools:text="Types : Shadow, Ranger" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_mana"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_types"
+        tools:text="Mana : 35" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_starting_mana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mana"
+        tools:text="Health : 650 / 1170 / 2106" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_starting_mana"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_range"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_health"
+        tools:text="Starting mana : 0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_range"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_attack_damage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_starting_mana"
+        tools:text="Range : 3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_attack_damage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_attack_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_range"
+        tools:text="Attack damage : 55 / 99 / 198" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_attack_speed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_armor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attack_damage"
+        tools:text="Attack speed : 0.75" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_armor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attack_speed"
+        tools:text="Armor : 20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_dps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tv_magic_resist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_armor"
+        tools:text="DPS : 41 / 74 / 149" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_magic_resist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/rl_section_closer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dps"
+        tools:text="Magic resist : 20" />
+
+    <RelativeLayout
+        android:id="@+id/rl_section_closer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintBottom_toTopOf="@+id/rv_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_magic_resist">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items :"
+            android:textStyle="bold|italic" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:src="@drawable/ic_arrow_drop_up_black_24dp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xl"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_section_closer"
+        tools:listitem="@layout/item_test_items" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,4 +14,5 @@
     <string name="menu_synergy_builder">Synergy Builder</string>
     <string name="menu_compositions">Compositions</string>
     <string name="menu_test_room">Test Room</string>
+    <string name="menu_test_compositions">Test Compositions</string>
 </resources>

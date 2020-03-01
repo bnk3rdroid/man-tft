@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/darker_gray"
-    android:paddingStart="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingEnd="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin">
+    android:padding="@dimen/margin_default">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/bg_ranking"
@@ -50,7 +47,7 @@
         android:id="@+id/rv_types"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_decoration_vertical_margin_small"
+        android:layout_marginTop="@dimen/margin_xs"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/rv_champions"
@@ -63,7 +60,7 @@
         android:id="@+id/rv_champions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_decoration_vertical_margin_small"
+        android:layout_marginTop="@dimen/margin_xs"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"

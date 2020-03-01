@@ -52,7 +52,7 @@ class UsersAdapter(
         recyclerView.addItemDecoration(
             ItemOffsetDecoration(
                 ctx,
-                R.dimen.item_decoration_horizontal_margin_small,
+                R.dimen.margin_xs,
                 ItemOffsetDecoration.Orientation.VERTICAL
             )
         )

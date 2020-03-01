@@ -14,6 +14,11 @@
             android:icon="@drawable/ic_unarchive_black_24dp"
             android:title="@string/menu_test_room" />
 
+        <item
+            android:id="@+id/nav_test_compositions"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="@string/menu_test_compositions" />
+
     </group>
 
 </menu>

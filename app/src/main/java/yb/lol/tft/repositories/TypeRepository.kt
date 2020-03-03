@@ -1,10 +1,10 @@
 package yb.lol.tft.repositories
 
 import androidx.lifecycle.LiveData
-import yb.lol.tft.databases.dao.ChampionTypeJoinDAO
-import yb.lol.tft.databases.dao.CompositionTypeJoinDAO
-import yb.lol.tft.databases.dao.TypeDAO
-import yb.lol.tft.models.entities.Type
+import yb.lol.tft.dao.ChampionTypeJoinDAO
+import yb.lol.tft.dao.CompositionTypeJoinDAO
+import yb.lol.tft.dao.TypeDAO
+import yb.lol.tft.entities.Type
 
 class TypeRepository(
     typeDAO: TypeDAO,

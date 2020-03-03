@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_champion_composition.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.entities.Champion
+import yb.lol.tft.entities.Champion
 import yb.lol.tft.ui.items.CarryItemsAdapter
 import yb.lol.tft.ui.recycler_view.ItemOffsetDecoration
 

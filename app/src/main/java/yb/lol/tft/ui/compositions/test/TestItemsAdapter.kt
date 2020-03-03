@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_test_items.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.entities.Item
+import yb.lol.tft.entities.Item
 
 class TestItemsAdapter : RecyclerView.Adapter<TestItemsAdapter.TestItemsVH>() {
 

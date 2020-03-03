@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import yb.lol.tft.databases.TFTDatabase
-import yb.lol.tft.models.entities.Item
+import yb.lol.tft.entities.Item
 import yb.lol.tft.repositories.ItemRepository
 
 class ItemsViewModel(application: Application) : AndroidViewModel(application) {

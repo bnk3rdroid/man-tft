@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import yb.lol.tft.databases.TFTDatabase
-import yb.lol.tft.models.entities.Champion
+import yb.lol.tft.entities.Champion
 import yb.lol.tft.repositories.ChampionRepository
 
 class ChampionsViewModel(application: Application) : AndroidViewModel(application) {
@@ -20,7 +20,7 @@ class ChampionsViewModel(application: Application) : AndroidViewModel(applicatio
         val championItemJoinDao = database.getChampionItemJoinDao()
         repository =
             ChampionRepository(championDao, compositionChampionJoinDao, championItemJoinDao)
-        allChampions = repository.allChampions
+        allChampions = repository.allChampions()
     }
 
     fun championsFromComposition(compositionId: Int) =

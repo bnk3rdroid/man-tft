@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_test_optimal_champions.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.entities.Champion
+import yb.lol.tft.entities.Champion
 import yb.lol.tft.ui.recycler_view.ItemOffsetDecoration
 import yb.lol.tft.view_models.ItemsViewModel
 import yb.lol.tft.view_models.TypesViewModel

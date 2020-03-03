@@ -2,7 +2,7 @@ package yb.lol.tft.ui.compositions
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import yb.lol.tft.models.entities.Composition
+import yb.lol.tft.entities.Composition
 
 class CompositionsViewModel : ViewModel() {
 

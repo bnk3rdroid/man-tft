@@ -1,13 +1,13 @@
-package yb.lol.tft.models.entities.join
+package yb.lol.tft.entities.join
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
-import yb.lol.tft.models.entities.Champion
-import yb.lol.tft.models.entities.Item
+import yb.lol.tft.entities.Champion
+import yb.lol.tft.entities.Type
 
 @Entity(
-    tableName = "champions_items_join",
-    primaryKeys = ["champion_id", "item_id"],
+    tableName = "champions_types_join",
+    primaryKeys = ["champion_id", "type_id"],
     foreignKeys = [
         ForeignKey(
             entity = Champion::class,
@@ -15,13 +15,13 @@ import yb.lol.tft.models.entities.Item
             childColumns = ["champion_id"]
         ),
         ForeignKey(
-            entity = Item::class,
+            entity = Type::class,
             parentColumns = ["id"],
-            childColumns = ["item_id"]
+            childColumns = ["type_id"]
         )
     ]
 )
-data class ChampionItemJoin(
+data class ChampionTypeJoin(
     val champion_id: Int = 0,
-    val item_id: Int = 0
+    val type_id: Int = 0
 )

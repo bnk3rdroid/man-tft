@@ -1,13 +1,13 @@
-package yb.lol.tft.databases.dao
+package yb.lol.tft.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.RoomWarnings
-import yb.lol.tft.models.entities.Champion
-import yb.lol.tft.models.entities.Composition
-import yb.lol.tft.models.entities.join.CompositionChampionJoin
+import yb.lol.tft.entities.Champion
+import yb.lol.tft.entities.Composition
+import yb.lol.tft.entities.join.CompositionChampionJoin
 
 @Dao
 interface CompositionChampionJoinDAO {

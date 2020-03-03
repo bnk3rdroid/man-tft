@@ -7,8 +7,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_composition.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.entities.Composition
-import yb.lol.tft.models.entities.Rank
+import yb.lol.tft.entities.Composition
+import yb.lol.tft.entities.Rank
 import yb.lol.tft.ui.champions.CompositionChampionsAdapter
 import yb.lol.tft.ui.recycler_view.ItemOffsetDecoration
 import yb.lol.tft.ui.types.TypesSmallAdapter
@@ -36,14 +36,16 @@ class CompositionsAdapter : RecyclerView.Adapter<CompositionsAdapter.Composition
         //Name
         holder.itemView.tv_name.text = item.name
         //Rank
-        holder.itemView.ranking_note.text = item.rank.name
+        holder.itemView.ranking_note.text =
+            if (item.rank == Rank.UNKNOWN) "?"
+            else item.rank.name
         holder.itemView.bg_ranking.background = ContextCompat.getDrawable(
             ctx, when (item.rank) {
                 Rank.S -> R.drawable.bg_ranking_s
                 Rank.A -> R.drawable.bg_ranking_a
                 Rank.B -> R.drawable.bg_ranking_b
                 Rank.C -> R.drawable.bg_ranking_c
-                else -> android.R.color.darker_gray
+                else -> R.drawable.bg_ranking_unknown
             }
         )
 

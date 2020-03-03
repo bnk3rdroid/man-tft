@@ -1,4 +1,4 @@
-package yb.lol.tft.models.entities
+package yb.lol.tft.entities
 
 import android.graphics.drawable.Drawable
 import androidx.room.*

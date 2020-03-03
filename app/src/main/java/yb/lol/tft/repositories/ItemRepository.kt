@@ -1,9 +1,9 @@
 package yb.lol.tft.repositories
 
 import androidx.lifecycle.LiveData
-import yb.lol.tft.databases.dao.ChampionItemJoinDAO
-import yb.lol.tft.databases.dao.ItemDAO
-import yb.lol.tft.models.entities.Item
+import yb.lol.tft.dao.ChampionItemJoinDAO
+import yb.lol.tft.dao.ItemDAO
+import yb.lol.tft.entities.Item
 
 class ItemRepository(
     itemDao: ItemDAO,

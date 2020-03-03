@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import yb.lol.tft.databases.TFTDatabase
-import yb.lol.tft.models.entities.Type
+import yb.lol.tft.entities.Type
 import yb.lol.tft.repositories.TypeRepository
 
 class TypesViewModel(application: Application) : AndroidViewModel(application) {

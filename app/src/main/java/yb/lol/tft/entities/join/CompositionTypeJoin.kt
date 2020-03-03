@@ -1,9 +1,9 @@
-package yb.lol.tft.models.entities.join
+package yb.lol.tft.entities.join
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
-import yb.lol.tft.models.entities.Composition
-import yb.lol.tft.models.entities.Type
+import yb.lol.tft.entities.Composition
+import yb.lol.tft.entities.Type
 
 @Entity(
     tableName = "compositions_types_join",

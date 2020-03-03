@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_type_small.view.*
 import yb.lol.tft.R
-import yb.lol.tft.models.entities.Type
+import yb.lol.tft.entities.Type
 
 class TypesSmallAdapter : RecyclerView.Adapter<TypesSmallAdapter.TypesSmallViewHolder>() {
 

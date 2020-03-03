@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import yb.lol.tft.R
+import yb.lol.tft.TFTApplication
 
 class MainActivity : AppCompatActivity() {
 
